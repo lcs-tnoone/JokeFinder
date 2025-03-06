@@ -48,6 +48,20 @@ class JokeViewModel {
         print("There are \(favouriteJokes.count) jokes saved.")
      
     }
+    
+    // Delete a joke from the list of favourites
+    func delete(_ jokeToDelete: JokeModel) {
+        
+        // Remove the provided joke from the list of saved favourites
+        favouriteJokes.removeAll { currentJoke in
+            currentJoke.id == jokeToDelete.id
+        }
+        
+        // How many saved jokes are there now?
+        print("There are \(favouriteJokes.count) jokes saved.")
+     
+    }
+
 
            // MARK: Function(s)
            
