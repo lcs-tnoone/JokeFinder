@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E96A275C2D791FB300C82981 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96A275B2D791FB300C82981 /* JokeViewModel.swift */; };
 		E97B58CC2D78965D000DA48E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97B58C62D78965D000DA48E /* Preview Assets.xcassets */; };
 		E97B58CD2D78965D000DA48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97B58C82D78965D000DA48E /* Assets.xcassets */; };
 		E97B58CE2D78965D000DA48E /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97B58C92D78965D000DA48E /* JokeView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E96A275B2D791FB300C82981 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		E97B58B52D78964F000DA48E /* JokeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97B58C62D78965D000DA48E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E97B58C82D78965D000DA48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		E97B58D12D789835000DA48E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E96A275B2D791FB300C82981 /* JokeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				E97B58CE2D78965D000DA48E /* JokeView.swift in Sources */,
 				E97B58CF2D78965D000DA48E /* JokeFinderApp.swift in Sources */,
 				E97B58D42D789DDB000DA48E /* JokeModel.swift in Sources */,
+				E96A275C2D791FB300C82981 /* JokeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
