@@ -16,6 +16,10 @@ class JokeViewModel {
     // from the endpoint
     var currentJoke: JokeModel?
     
+    // Holds a list of favourite jokes
+    var favouriteJokes: [JokeModel] = []
+
+    
     // MARK: Initializer(s)
     init(currentJoke: JokeModel? = nil) {
         
@@ -32,6 +36,19 @@ class JokeViewModel {
                }
            }
            
+    // Add the current joke to the list of favourites
+    func saveJoke() {
+        
+        // Save current joke
+        if let currentJoke = self.currentJoke {
+            favouriteJokes.insert(currentJoke, at: 0)
+        }
+        
+        // How many saved jokes are there now?
+        print("There are \(favouriteJokes.count) jokes saved.")
+     
+    }
+
            // MARK: Function(s)
            
            // This loads a new joke from the endpoint
