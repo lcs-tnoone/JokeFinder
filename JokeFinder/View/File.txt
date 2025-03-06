@@ -1,0 +1,2 @@
+// Access the view model from the environment
+@Environment(JokeViewModel.self) var viewModel
