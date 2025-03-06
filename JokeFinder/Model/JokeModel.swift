@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct Jokemodel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct JokeModel: Identifiable, Codable {
+    
+    // MARK: Stored properties
+    let type: String
+    let setup: String?
+    let punchline: String?
+    let id: Int
+        
 }
-
-#Preview {
-    Jokemodel()
-}
+ 
+// Create an example joke for testing purposes
+let exampleJoke = JokeModel(
+    type: "general",
+    setup: "Why couldn't the kid go to see the pirate movie?",
+    punchline: "Because it was rated arrrrr!",
+    id: 310
+)
